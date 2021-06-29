@@ -37,11 +37,11 @@
 
 Сохраняем данные системные переменные в Path и закрываем окно Система.
 
-4. [Далее скачиваем исходники QT 5.15.1](http://download.qt.io/official_releases/qt/5.15/5.15.2/single/qt-everywhere-src-5.15.2.zip "Исходники QT") (может быть новее, поэтому ссылка на все версии - [тык](http://download.qt.io/official_releases/qt/)) и распаковываем архив в любую папку - 
+4. [Далее скачиваем исходники QT 5.15.2](http://download.qt.io/official_releases/qt/5.15/5.15.2/single/qt-everywhere-src-5.15.2.zip "Исходники QT") (может быть новее, поэтому ссылка на все версии - [тык](http://download.qt.io/official_releases/qt/)) и распаковываем архив в любую папку - 
 
 5. Переходим в нее и начинаем писать в cmd.exe/powershell.exe или создайте рядом с configure батник с названием - install.bat и запустите его через cmd.exe:
 
-`configure -static -debug-and-release -platform win32-g++ -qt-zlib -qt-pcre -qt-libpng -qt-libjpeg -qt-freetype -qt-tiff -qt-webp -opengl desktop -no-angle -sql-sqlite -openssl -I "C:\Qt\Tools\OpenSSL\Win_x64\include" -L "C:\Qt\Tools\OpenSSL\Win_x64" -opensource -confirm-license -make libs -make tools -nomake examples -nomake tests -prefix C:\Qt\5.15.1\mingw81_64_static`
+`configure -static -debug-and-release -platform win32-g++ -qt-zlib -qt-pcre -qt-libpng -qt-libjpeg -qt-freetype -qt-tiff -qt-webp -opengl desktop -no-angle -sql-sqlite -openssl -I "C:\Qt\Tools\OpenSSL\Win_x64\include" -L "C:\Qt\Tools\OpenSSL\Win_x64" -opensource -confirm-license -make libs -make tools -nomake examples -nomake tests -prefix C:\Qt\5.15.2\mingw81_64_static`
 
 `mingw32-make -k -j4`
 
