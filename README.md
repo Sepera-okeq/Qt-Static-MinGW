@@ -1,4 +1,4 @@
-# Статическая сборка QT 5.15.1 MinGWx64
+# Статическая сборка QT 5.15.2 MinGWx64
 
 
 1. Для начала нужно поставить именно Online установку для дополнительных инструментов (MinGW,OpenSSL из Tools и т.д). [Online Installer](http://download.qt.io/official_releases/online_installers/qt-unified-windows-x86-online.exe "Онлайн Инсталлятор") 
@@ -37,7 +37,7 @@
 
 Сохраняем данные системные переменные в Path и закрываем окно Система.
 
-4. [Далее скачиваем исходники QT 5.15.1](http://download.qt.io/official_releases/qt/5.15/5.15.1/single/qt-everywhere-src-5.15.1.zip "Исходники QT") (может быть новее, поэтому ссылка на все версии - [тык](http://download.qt.io/official_releases/qt/)) и распаковываем архив в любую папку - 
+4. [Далее скачиваем исходники QT 5.15.1](http://download.qt.io/official_releases/qt/5.15/5.15.2/single/qt-everywhere-src-5.15.2.zip "Исходники QT") (может быть новее, поэтому ссылка на все версии - [тык](http://download.qt.io/official_releases/qt/)) и распаковываем архив в любую папку - 
 
 5. Переходим в нее и начинаем писать в cmd.exe/powershell.exe или создайте рядом с configure батник с названием - install.bat и запустите его через cmd.exe:
 
@@ -51,4 +51,4 @@
 
 7. И чтоб отлучить об зависимостей MinGW в проект добавляем
 
-`QMAKE_LFLAGS_RELEASE += -static -static-libgcc`
+`QMAKE_LFLAGS_RELEASE += -static -static-libgcc -static-libstdc++`
